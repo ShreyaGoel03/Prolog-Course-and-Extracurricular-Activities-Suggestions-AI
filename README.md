@@ -81,14 +81,19 @@ For Example, for some valid course interest - ‘algorithms’, grade - 8, and n
 interest - ‘finance’.<br/>
 <br/>
 **Concluding Output obtained facts after Forward Chaining:**<br/>
-Fact: Choose Foundation Course - Analysis and Design of Algorithms
-Fact: Choose Foundation Course - Data Structures and Algorithms
-Fact: Choose Elective Course - Introduction to Graduate Algorithms
-Fact: Choose Elective Course - Program Verification and Analysis
-Fact: Choose Elective Course - Algorithms in Computational Biology
-Fact: Choose Elective Course - Randomized Algorithms
-Fact: Choose Elective Course - Modern Algorithm Design
-Fact: Technical Club Foobar:- Competitive Programming Club
-Fact: NonTechnical Club Finnexia:- Finance Club
+Fact: Choose Foundation Course - Analysis and Design of Algorithms<br/>
+Fact: Choose Foundation Course - Data Structures and Algorithms<br/>
+Fact: Choose Elective Course - Introduction to Graduate Algorithms<br/>
+Fact: Choose Elective Course - Program Verification and Analysis<br/>
+Fact: Choose Elective Course - Algorithms in Computational Biology<br/>
+Fact: Choose Elective Course - Randomized Algorithms<br/>
+Fact: Choose Elective Course - Modern Algorithm Design<br/>
+Fact: Technical Club Foobar:- Competitive Programming Club<br/>
+Fact: NonTechnical Club Finnexia:- Finance Club<br/>
 
 #### Screenshots:
+
+![Output1](https://user-images.githubusercontent.com/43794593/154136629-72cb5f5a-dd3f-4af7-8e33-d4d9aa8a0e0e.png)
+
+![Output2](https://user-images.githubusercontent.com/43794593/154136638-2a90214f-56d6-4c28-b178-71568c0b4c21.png)
+
