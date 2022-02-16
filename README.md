@@ -1,20 +1,23 @@
 # Prolog-Course-and-Extracurricular-Activities-Suggestions-
-Forward Chaining refers to that we are given a set of facts and we try to derive conclusions from these facts. durable-rules refer to defining the event, fact pattern to
-match and the action to take.
-<br/>
+<p align="justify">
+Forward Chaining refers to that we are given a set of facts and we try to derive conclusions from these facts. durable-rules refer to defining the event, fact pattern to match and the action to take.
+<br/></p>
 
 ### Algorithm Design:
-The overview of the whole system is as follows:
-Given: Interest of the student, grade of the student
-Output: The suggestion list of courses and extracurricular activities
+<p align="justify">
+The overview of the whole system is as follows:<br/>
+Given: Interest of the student, grade of the student<br/>
+Output: The suggestion list of courses and extracurricular activities<br/>
+</p>
 
 #### Process:
-There is 4 ruleset that is used that is ‘interests’, ‘basic courses’, ‘courses’, ‘activities’.
+<p align="justify">
+There is 4 ruleset that is used that is ‘interests’, ‘basic courses’, ‘courses’, ‘activities’.<br/>
 1. The student is first asked to enter the current grade as an input which lies
-between 1 to 10.
+between 1 to 10.<br/>
 2. A list of interests related to the courses and a list of interests of non-technical
 activities is being displayed to the student, in which the student enters the index
-choice which takes the value of it from the stored dictionary.
+choice which takes the value of it from the stored dictionary.<br/>
 <br/>
     Dictionary which stores the mapping of the index with the interest.
 interest_dict = {1:'machine learning', 2:'deep learning', 3:'data engineering',
@@ -29,19 +32,23 @@ extracurricular_dict = {1:'astronomy', 2:'audio', 3:'literature', 4:'theatre', 5
 6:'standup', 7:'photography', 8:'finance', 9:'art', 10:'fashion'}
 <br/>
 <br/>
-
+</p>
+<p align="justify">
 3. After the student has entered valid indexes, then for courses interest, the
 ‘interests’ ruleset is called and then the matched facts according to the interest
 and the grade is being triggered. This is the repeated application of logical
 modus ponens to the set of facts being called to derive a conclusion. The basic
 courses and core/elective courses ruleset are being called and ‘activities ruleset
-which displays the technical club.
+which displays the technical club.</p>
+
+<p align="justify">
 4. For the non-technical interest choice, the fact calls the ‘activities’ ruleset which
 matches the set of facts/events present inside and then calls the set of facts
-present inside that matched function.
+present inside that matched function.</p>
 <br/>
 
 #### How Forward Chaining Displayed: <br/>
+<p align="justify">
 Since the student is asked the interest of its choice and the fact is generated,
 assert_fact('interests', {'interest':interest_value, 'grade':grade}). This fact calls the
 ‘interests’ ruleset and then matches that is following the logical modus ponens, where p
@@ -55,7 +62,7 @@ fact calls the ‘activities ruleset and then matches that is also following the
 ponens, where p = initial fact generated above/ matched function with this fact, q = facts
 written inside the matched function of the ruleset if exists, then it calls q. This process
 repeats to the sets of facts being called to derive the conclusion. So, it lists out all the
-extracurricular clubs/activities present in IIITD to the student, which is the goal.
+extracurricular clubs/activities present in IIITD to the student, which is the goal.</p>
 
 #### Modus Ponens:<br/>
 p<br/>
